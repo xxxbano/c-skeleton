@@ -1,0 +1,69 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BADFUNCS	Makefile	/^BADFUNCS = '[^_.>a-zA-Z0-9](str(n?cat|xfrm|n?dup|str|pbrk|tok|_)|stpn?cpy|a?sn?printf|byte_)'$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLGAS)$/;"	m
+CFLAGS	Makefile	/^dev: CFLAGS = -g -Wall -Isrc -Wall -Wextra $(OPTFLGAS)$/;"	m
+LIBS	Makefile	/^LIBS = -ldl $(OPTLIBS)$/;"	m
+NDEBUG	src/minunit.h	1;"	d
+NDEBUG	tests/minunit.h	1;"	d
+OBJECTS	Makefile	/^OBJECTS = $(patsubst %.c, %.o, $(SOURCES))$/;"	m
+PREFIX	Makefile	/^PREFIX ?= \/usr\/local$/;"	m
+RUN_TESTS	src/minunit.h	15;"	d
+RUN_TESTS	tests/minunit.h	15;"	d
+SOURCES	Makefile	/^SOURCES = $(wildcard src\/**\/*.c src\/*.c)$/;"	m
+SO_TARGET	Makefile	/^SO_TARGET = $(patsubst %.a, %.so, $(TARGET))$/;"	m
+TARGET	Makefile	/^TARGET = build\/libex29.a $/;"	m
+TESTS	Makefile	/^TESTS = $(patsubst %.c, %, $(TEST_SRC))$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC = $(wildcard tests\/*_tests.c)$/;"	m
+__dbg_h__	src/dbg.h	2;"	d
+__dbg_h__	tests/dbg.h	2;"	d
+__minunit_h__	src/minunit.h	3;"	d
+__minunit_h__	tests/minunit.h	3;"	d
+all_tests	tests/libex29_tests.c	/^RUN_TESTS(all_tests);$/;"	v
+all_tests	tests/libex29_tests.c	/^char *all_tests() {$/;"	f
+check	src/dbg.h	22;"	d
+check	tests/dbg.h	22;"	d
+check_debug	src/dbg.h	28;"	d
+check_debug	tests/dbg.h	28;"	d
+check_function	tests/libex29_tests.c	/^int check_function(const char *func_to_run, const char *data, int expected)$/;"	f
+check_mem	src/dbg.h	26;"	d
+check_mem	tests/dbg.h	26;"	d
+clean_errno	src/dbg.h	14;"	d
+clean_errno	tests/dbg.h	14;"	d
+debug	src/dbg.h	11;"	d
+debug	src/dbg.h	9;"	d
+debug	tests/dbg.h	11;"	d
+debug	tests/dbg.h	9;"	d
+fail_on_purpose	src/libex29.c	/^int fail_on_purpose(const char *msg)$/;"	f
+lib	tests/libex29_tests.c	/^void *lib = NULL;$/;"	v
+lib_file	tests/libex29_tests.c	/^char *lib_file = "build\/libex29.so";$/;"	v
+lib_function	tests/ex29.c	/^typedef int (*lib_function)(const char *data);$/;"	t	file:
+lib_function	tests/libex29_tests.c	/^typedef int (*lib_function)(const char *data);$/;"	t	file:
+log_err	src/dbg.h	16;"	d
+log_err	tests/dbg.h	16;"	d
+log_info	src/dbg.h	20;"	d
+log_info	tests/dbg.h	20;"	d
+log_warn	src/dbg.h	18;"	d
+log_warn	tests/dbg.h	18;"	d
+lowercase	src/libex29.c	/^int lowercase(const char *msg)$/;"	f
+main	tests/ex29.c	/^int main(int argc, char *argv[])$/;"	f
+mu_assert	src/minunit.h	11;"	d
+mu_assert	tests/minunit.h	11;"	d
+mu_run_test	src/minunit.h	12;"	d
+mu_run_test	tests/minunit.h	12;"	d
+mu_suite_start	src/minunit.h	9;"	d
+mu_suite_start	tests/minunit.h	9;"	d
+print_a_message	src/libex29.c	/^int print_a_message(const char *msg)$/;"	f
+sentinel	src/dbg.h	24;"	d
+sentinel	tests/dbg.h	24;"	d
+test_dlclose	tests/libex29_tests.c	/^char *test_dlclose()$/;"	f
+test_dlopen	tests/libex29_tests.c	/^char *test_dlopen()$/;"	f
+test_failures	tests/libex29_tests.c	/^char *test_failures()$/;"	f
+test_functions	tests/libex29_tests.c	/^char *test_functions()$/;"	f
+tests_run	src/minunit.h	/^int tests_run;$/;"	v
+tests_run	tests/minunit.h	/^int tests_run;$/;"	v
+uppercase	src/libex29.c	/^int uppercase(const char *msg)$/;"	f
