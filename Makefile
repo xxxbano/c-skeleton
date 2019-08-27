@@ -14,7 +14,7 @@ MAIN_SRC = $(wildcard tests/main.c)
 #MAIN = $(patsubst %.c, %, $(MAIN_SRC))
 MAIN = bin/main
 
-TARGET = build/libex29.a 
+TARGET = build/lib_test.a 
 SO_TARGET = $(patsubst %.a, %.so, $(TARGET))
 
 # The Target Build
