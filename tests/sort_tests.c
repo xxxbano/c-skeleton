@@ -1,7 +1,9 @@
 #include <dlfcn.h>
 #include "minunit.h"
 
+// define the function for test
 typedef int (*lib_function1)(const int *data, const int length);
+// define the function for test
 typedef int (*lib_function2)(const int *data, const int n, const int m);
 char *lib_file = "build/lib_test.so";
 void *lib = NULL;
@@ -14,6 +16,7 @@ int result[] = {0,1,2,3,4,5,6,8,9};
 int length = 9;
 unsigned int i;
 
+// check for function1 
 int check_function1(const char *func_to_run, const int *data, const int length)
 {
 	lib_function1 func = dlsym(lib, func_to_run);
@@ -29,6 +32,8 @@ error:
 	return 0;
 }
 
+// check for function2 
+int check_function1(const char *func_to_run, const int *data, const int length)
 int check_function2(const char *func_to_run, const int *data, const int n, const int m)
 {
 	lib_function2 func = dlsym(lib, func_to_run);
