@@ -13,7 +13,7 @@
 	message = test(); tests_run++; if(message) return message;
 
 #define RUN_TESTS(name) int main(int argc, char *argv[]) {\
-	if(argc != 1) {printf("argc != 1\n"); exit(1);}\
+	if(argc!=1) { printf("argc!=1\n"); exit(0);}\
 	debug("----- RUNNING: %s", argv[0]);\
 			printf("-----\nRUNNING: %s\n", argv[0]);\
 			char *result = name();\
